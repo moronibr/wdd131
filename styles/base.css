@@ -10,7 +10,11 @@ body {
 }
 
 header {
+<<<<<<< HEAD
 	background-color: #457099;
+=======
+	background-color: #bbb;
+>>>>>>> b4319a696702800d0308678fc5a9542048776a00
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -18,15 +22,30 @@ header {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 
 h1 {
 	font-size: 2rem;
 	color: white;
+=======
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+>>>>>>> b4319a696702800d0308678fc5a9542048776a00
 }
 
 nav {
 	background-color: #36454f;
+<<<<<<< HEAD
 	border: 1px solid rgba(0, 0, 0, 0.1);
+=======
+	margin: 0 auto;
+	max-width: 800px;
+>>>>>>> b4319a696702800d0308678fc5a9542048776a00
 }
 nav ul {
 	list-style-type: none;
@@ -40,6 +59,7 @@ nav a {
 }
 
 nav a:hover {
+<<<<<<< HEAD
 	text-decoration: underline;
 }
 
@@ -49,10 +69,18 @@ nav a:hover {
 	display: flex;
 	justify-content: end;
 	align-items: center;
+=======
+	text-decoration:overline;
+}
+
+.active {
+	color: yellow;
+>>>>>>> b4319a696702800d0308678fc5a9542048776a00
 }
 
 p {
 	margin: 0.25rem;
+<<<<<<< HEAD
 	padding: 0.5rem 0.75rem;
 	color: white;
 	display: block;
@@ -68,6 +96,20 @@ footer {
 	bottom: 0;
 }
 
+=======
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+}
+
+.highlight {
+	color: navy;
+	font-weight: 700;
+	font-family: hebrew;
+}
+
+
+>>>>>>> b4319a696702800d0308678fc5a9542048776a00
 /* Larger Views ******************************/
 @media (min-width: 640px) {
 	nav ul {
@@ -76,6 +118,11 @@ footer {
 	nav ul li {
 		flex: 1 1 100%;
 	}
+<<<<<<< HEAD
 
 	
 }
+=======
+}
+  
+>>>>>>> b4319a696702800d0308678fc5a9542048776a00
