@@ -1,39 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
 body {
-    display: grid;
-    height: 100vh;
-    grid-template: auto 1fr auto / 300px 1fr auto;
-  }
-  
-  header {
-    background: lightpink;
-    padding: 2rem;
-    grid-column: 1 / 4;
-  }
-  
-  .left-sidebar {
-    background: lightblue;
-    grid-column: 1 / 2;
-  }
-  
-  main {
-    background: coral;
-    grid-column: 2 / 3;
-  }
-  
-  .right-sidebar {
-    background: yellow;
-    grid-column: 3 / 4;
-  }
-  
-  footer {
-    background: wheat;
-    padding: 2rem;
-    text-align: center;
-    grid-column: 1 / 4;
-  }
-  
-  .left-sidebar,
-  .right-sidebar {
-    padding: 1rem;
-  }
-  
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	background-color: #457099;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+	font-size: 2rem;
+	color: white;
+}
+
+nav {
+	background-color: #36454f;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+
+.card-img {
+	max-width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+p {
+	margin: 0.25rem;
+	padding: 0.5rem 0.75rem;
+	color: white;
+	display: block;
+}
+
+footer {
+	background-color: #457099;
+	padding: 20px;
+	text-align: center;
+	padding-bottom: 0%;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
+	
+}
