@@ -22,24 +22,17 @@ h1 {
 	font-size: 2rem;
 }
 
-header,
-main {
-	margin: 0 auto;
-}
-
-h1 {
-	font-size: 2rem;
-}
-
 nav {
 	background-color: #36454f;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 100%;
 }
+
 nav ul {
 	list-style-type: none;
 }
+
 nav a {
 	display: block;
 	color: #fff;
@@ -52,18 +45,52 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+main {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 10px;
+	padding: 10px;
 
-.card-img {
-	max-width: 100%;
-	display: flex;
-	justify-content: end;
-	align-items: center;
-	text-decoration:overline;
 }
 
-.active {
-	color: yellow;
+.card div {
+	text-align: center;
+	padding: 135px 0;
+	font-size: 30px;
 }
+
+#first {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	border: gray 1px solid;
+	border-radius: 10px;
+}
+
+.about {
+	text-align: center;
+	background-color: #457099;
+	border: #000000 1px solid;
+	border-radius: 7px;
+	padding: 5px;
+	color: white;
+}
+
+
+#second {
+	border: gray 1px solid;
+	border-radius: 10px;	
+	grid-column-start: auto;
+}
+
+.resources{
+	text-align: center;
+	background-color: #457099;
+	border: #000000 1px solid;
+	border-radius: 7px;
+	padding: 5px;
+	color: white;
+}
+
 
 p {
 	margin: 0.25rem;
@@ -74,12 +101,8 @@ p {
 
 footer {
 	background-color: #457099;
-	padding: 20px;
-	text-align: center;
-	padding-bottom: 0%;
-	width: 100%;
-	position: fixed;
-	bottom: 0;
+	padding: 10px;
+    text-align: center;
 }
 
 .highlight {
@@ -97,7 +120,7 @@ footer {
 		flex: 1 1 100%;
 	}
 
-	
+
 
 	
 }
