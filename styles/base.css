@@ -56,6 +56,26 @@ main {
 
 }
 
+.moroni {
+	border-radius: 50%;
+	width: 20%;
+	height: 20%;
+	max-width: 20%;
+	max-height: 20%;
+	display: flex;
+	margin-left: 70%;
+}
+
+.flag {
+	border-radius: 30%;
+	width: 20%;
+	height: 50%;
+	max-width: 20%;
+	max-height: 50%;
+	display: flex;
+	margin-left: 10%;
+}
+
 .card div {
 	text-align: center;
 	padding: 135px 0;
@@ -67,6 +87,16 @@ main {
 	grid-column-end: 3;
 	border: gray 1px solid;
 	border-radius: 10px;
+}
+
+ul li {
+	list-style-type: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
 }
 
 .about {
