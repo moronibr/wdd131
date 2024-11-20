@@ -10,28 +10,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="temples-large.css">
+  <script src="temples.js"></script>
+  <link rel="stylesheet" href="temples-large.css" media="(min-width: 740px)">
+  <link rel="stylesheet" href="temples.css" media="(max-width: 739px)">
 </head>
 
 <body>
 
-    <header>
-        <h1>Temple Album</h1>
+  <header>
+    <h1>Temple Album</h1>
 
-        <nav>
-            <ul id="menu">
-            <li><a>Home</a></li>
-            <li><a>Old</a></li>
-            <li><a>New</a></li>
-            <li><a>Large</a></li>
-            <li><a>Small</a></li>
-            
-            </ul>
-        </nav>
-        
-    </header>
-   
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
 
+    <!-- Navigation Menu -->
+    <nav id="menu" class="hidden">
+      <!-- Close button (X) to hide the menu -->
+      <div class="close-btn" onclick="toggleMenu()">X</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 - Moroni Bamvakiades Ramos - WDD 131</p>
+  </footer>
+
+  <script src="temples.js"></script>
 </body>
 
 </html>

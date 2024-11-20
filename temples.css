@@ -1,57 +1,121 @@
+/* General reset and styling */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: "Sansita", sans-serif;
+    font-family: "Sansita", sans-serif;
 }
-
 
 header {
-	background-color: #bbb;
-	display: grid;
-	grid-gap: 1rem;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
+    background-color:  rgb(68, 29, 104);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
 }
 
-header,
-main {
-	margin: 0 auto;
+/* Hamburger Menu (for small screens) */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    margin: 10px;
 }
 
-h1 {
-	font-size: 2rem;
+.line {
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
 }
 
+/* Navigation Menu */
 nav {
-	background-color: #36454f;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color:  rgb(68, 29, 104);
+    width: 100%; /* Control the width of the menu */
+    transform: translateX(100%);  /* Initially hide the menu off-screen */
+	justify-content: center;
+	text-align: center;
 }
 
 nav ul {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    margin-bottom: 20px;
 }
 
 nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
-	font-size: larger;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 nav a:hover {
-	text-decoration: underline double;
-	background-color: #eee;
-	color: #000;
+    text-decoration: underline;
 }
 
-.active {
-	color: yellow;
+/* Close Button (X) */
+.close-btn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px; /* Adjust for fixed header */
+}
+
+footer {
+    background-color: rgb(68, 29, 104);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile Styling: Show hamburger icon and hide navigation by default */
+@media (max-width: 739px) {
+    .hamburger {
+        display: flex;  /* Show hamburger on small screens */
+    }
+
+    nav {
+        display: flex;  /* Ensure nav is a flex container */
+    }
+
+    main {
+        padding-top: 60px; /* Adjust space due to fixed header */
+    }
+}
+
+/* Show the menu when it's not hidden */
+nav.visible {
+    transform: translateX(0);  /* Show the menu */
 }
