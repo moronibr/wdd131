@@ -1,8 +1,69 @@
 @media (max-width: 1023px) {
+    /* For small screens, adjust the nav (header) */
+    header {
+        background-color: rgba(247, 224, 21, 0.829);
+        color: green;
+        padding: 0.5rem;  /* Reduced padding for smaller screens */
+        font-size: 18px;   /* Slightly smaller font */
+        text-align: center;
+    }
 
-body {
-    background-color: purple;
-}
+    /* Make the flag image fill the screen width and adjust height */
+    #flag {
+        width: 100%;  /* Make the flag image take up the full width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image covers the space without distortion */
+        opacity: 0.8; /* Optional: slightly decrease opacity */
+    }
 
+    /* Adjust the left box */
+    .left-box {
+        width: 100%;  /* Full width */
+        height: auto; /* Height adjusts based on content */
+        margin-top: 1rem;
+        background-color: rgba(247, 224, 21, 0.829);
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem; /* Space between boxes */
+    }
 
+    #small-screen-image {
+        display: block; /* Makes the image visible */
+        margin: 0 auto; /* Centers the image horizontally */
+        width: 30%;    /* Optional: Adjust the image size */
+        height: auto;   /* Optional: Maintain aspect ratio */
+    }
+
+    /* Adjust the right box */
+    .right-box {
+        width: 100%;  /* Full width */
+        height: auto; /* Height adjusts based on content */
+        margin-top: 1rem;
+        background-color: rgba(247, 224, 21, 0.829);
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem; /* Space between boxes */
+    }
+
+    /* Adjust the footer */
+    footer {
+        background-color: green;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        font-size: 14px; /* Smaller font size for footer */
+    }
+
+    /* Adjust list styling */
+    li {
+        font-size: 14px;  /* Smaller font for list items */
+        margin: 5px 0;
+        list-style-type: none;
+    }
 }

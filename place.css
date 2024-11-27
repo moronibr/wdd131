@@ -1,4 +1,12 @@
+#small-screen-image {
+    display: none;
+}
+
+
 /* Media Query for Minimum Screen Size (Desktop/Computer Screens) */
+
+
+
 @media (min-width: 1024px) {
     /* Reset default margins and paddings */
     * {
