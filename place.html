@@ -12,33 +12,44 @@
 </head>
 
 <body>
-
-<header>
-    <nav>
+    <header>
         <h1>Brazil</h1>
-    </nav>    
-</header>
+    </header>
+    <main>
 
-<main>
-    <img id="hero" src="images/Brasil.jpg" alt="">
+        <img id="flag" src="images/Brasil.jpg" alt="">
 
-
-    <section id="weather">
-        <p>Temperature: <span id="temperature">10</span>°C</p>
-        <p>Wind Speed: <span id="windSpeed">5</span> km/h</p>
-        <p>Wind Chill: <span id="windChill">N/A</span></p>
-    </section>
-    
-</main>
-
-
-
-
+        <div class="left-box">
+            <ul>
+                <h2>Data</h2>
+                <li>Area:8.515.767,049 sq Km</li>
+                <li>Population: 212.583.750</li>
+                <li>Capital: Brasilia</li>
+                <li>Language:Portuguese</li>
+                <li>Currency: Brazilian Real</li>
+                <li>Time Zone: UTC-3</li>
+                <li>Calling Code: +55</li>
+                <li>Internet TLD:.br</li>
+            </ul>
+        </div>
+        <div class="content">
+           
+        </div>
+        <div class="right-box">
+            <ul>    
+                <h2>Weather</h2>
+                <li>Temperature: 29°C</li>
+                <li>Conditions: Sunny</li>
+                <li>Wind: 10 Km/h</li>
+                <li>Wind Chill: 29°C</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+       <p>&copy; <span id="currentYear"></span> Moroni Bamvakiades Ramos</p>
+       <p> Last modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
-<footer>
-    <p>&copy; <span id="currentYear"></span></p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-</footer>
 
-<script src="script.js" defer></script>
+<script src="places.js" defer></script>
 </html>

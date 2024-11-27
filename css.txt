@@ -1,0 +1,68 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+/* Full-page layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full screen height */
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Main layout */
+main {
+    flex: 1; /* Expands to fill the remaining vertical space */
+    display: flex;
+    justify-content: space-between; /* Spaces out the boxes and content */
+    align-items: center; /* Centers the boxes vertically */
+    padding: 2rem;
+}
+
+/* Left and right boxes */
+.left-box, .right-box {
+    width: 200px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Main content */
+.content {
+    flex: 1; /* Takes up the remaining horizontal space */
+    margin: 0 1rem; /* Adds spacing between the boxes and the content */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

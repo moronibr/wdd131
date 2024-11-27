@@ -1,10 +1,10 @@
-<<<<<<< HEAD
+
 window.onload = function () {
     const year = document.querySelector("#year");
     const today = new Date();
     year.innerHTML = `${today.getFullYear()}`;
 };
-=======
+
 // select the DOM elements for output
 const full = document.querySelector("#full");
 const worldfull = document.querySelector("#world-full");
@@ -31,4 +31,3 @@ worldfull.innerHTML = `BRAZIL: <span class="highlight">${new Intl.DateTimeFormat
 	}
 ).format(today)}</span>`;
 
->>>>>>> b4319a696702800d0308678fc5a9542048776a00
