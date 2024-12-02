@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Filtered Temples</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="filtered-temples.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>WDD 131 Filtered Temples</h1>
+    
+
+    <select id="filtered" title="Choose a data filter.">
+      <option value="" disabled selected>Filter Temples</option>
+      <option value="old">Old</option>
+      <option value="new">New</option>
+      <option value="large">Large</option>
+      <option value="small">Small</option>
+      <option value="home">Home</option>
+    </select>
+
+    <div id="temples">
+    </div>
+  </main>
+
+
+  <footer>
+    &copy;<span id="year"></span> | Filtered Temples | WDD 131 | Moroni Bamvakiades Ramos
+  </footer>
+  <script src="filtered-temples.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
